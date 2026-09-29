@@ -42,7 +42,7 @@ def main():
                 print(f"    -> Progress: Downloaded {idx + 1}/500 metadata records.")
 
     # Save output to staging area
-    output_file = "hn_raw_stories.json"
+    output_file = "raw_stories.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(raw_stories, f, indent=4)
         
